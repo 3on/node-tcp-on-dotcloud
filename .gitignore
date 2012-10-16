@@ -1,0 +1,3 @@
+.dotcloud
+node_modules
+*.log

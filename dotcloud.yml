@@ -1,0 +1,7 @@
+tcp:
+    type: nodejs
+    process: node server.js
+    ports:
+        server: tcp
+    config:
+        node_version: v0.8.x
