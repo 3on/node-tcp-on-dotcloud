@@ -34,11 +34,9 @@ var http = express();
 
 http.get('/', function(req, res){
     res.json({
-        tcp: {
-            host: process.env['DOTCLOUD_TCP_SERVER_HOST'],
-            port: process.env['DOTCLOUD_TCP_SERVER_PORT'],
-            help: "just: '$ telnet "+ process.env['DOTCLOUD_TCP_SERVER_HOST'] + " " + process.env['DOTCLOUD_TCP_SERVER_PORT'] +"'"
-        }
+        host: process.env['DOTCLOUD_TCP_SERVER_HOST'],
+        port: process.env['DOTCLOUD_TCP_SERVER_PORT'],
+        help: "telnet "+ process.env['DOTCLOUD_TCP_SERVER_HOST'] + " " + process.env['DOTCLOUD_TCP_SERVER_PORT']
         /*, env: process.env*/
     });
 });
